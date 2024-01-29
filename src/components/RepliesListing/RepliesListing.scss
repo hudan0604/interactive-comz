@@ -1,1 +1,10 @@
-.RepliesListing {}
+.RepliesListing {
+  display: flex;
+  justify-content: space-between;
+
+  &__VerticalLine {
+    background: var(--light-grayish-blue);
+    width: 6px;
+    margin: 0 24px;
+  }
+}

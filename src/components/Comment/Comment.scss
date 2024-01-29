@@ -9,7 +9,7 @@
   display: flex;
   justify-content: space-between;
 
-  &:not(last-child) {
+  &:not(:last-of-type) {
     margin-bottom: 12px;
   }
 

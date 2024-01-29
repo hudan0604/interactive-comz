@@ -26,7 +26,7 @@ const Comment: FC<CommentModel> = (props: CommentModel) => {
           <div className="Comment__Content">{props.content}</div>
         </div>
       </div>
-      {replies && <RepliesListing {...(props.replies as any)} />}
+      {replies && <RepliesListing replies={props.replies!} />}
     </>
   );
 };

@@ -5,7 +5,7 @@ import RepliesListing from "./RepliesListing";
 
 describe("<RepliesListing />", () => {
   test("it should mount", () => {
-    render(<RepliesListing {...[]} />);
+    render(<RepliesListing replies={[]} />);
 
     const repliesListing = screen.getByTestId("RepliesListing");
 

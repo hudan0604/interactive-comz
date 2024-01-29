@@ -1,12 +1,12 @@
 import React, { FC } from "react";
 import "./CommentsListing.scss";
 import data from "../../data.json";
-import Comment from "../../components/Comment/Comment.lazy";
+import Comment from "../../components/Comment/Comment";
 
 interface CommentsListingProps {}
 
 const commentsListing = data.comments.map((comment) => (
-  <Comment {...comment} />
+  <Comment {...comment} key={comment.id} />
 ));
 
 const CommentsListing: FC<CommentsListingProps> = () => (
