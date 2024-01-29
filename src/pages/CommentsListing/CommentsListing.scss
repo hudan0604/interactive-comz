@@ -1,0 +1,12 @@
+.CommentsListingWraper {
+  background: var(--light-gray);
+  height: 100%;
+  width: 100%;
+  padding: 16px 0;
+  display: flex;
+  justify-content: center;
+
+  .CommentsListing {
+    width: 40%;
+  }
+}

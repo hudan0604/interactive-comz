@@ -1,0 +1,30 @@
+* > {
+  box-sizing: border-box;
+}
+
+.Comment {
+  background: var(--white);
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+
+  &:not(last-child) {
+    margin-bottom: 12px;
+  }
+
+  &__Body {
+    .Body__Header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .Header__Labels {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+      }
+    }
+  }
+}
